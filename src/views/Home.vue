@@ -8,10 +8,7 @@
           :src="require('./../assets/images/logo.png')"
           alt=""
         />
-        <a
-          href=""
-          class="fr btns hover"
-        >Wallet</a>
+        <a href="" class="fr btns">{{ interceptAccount?interceptAccount:"Connect Wallet" }}</a>
         <ul class="fr">
           <li class="fl"><a href="">Ecosystem</a></li>
           <li class="fl"><a href="">Buy</a></li>
@@ -34,28 +31,16 @@
           Decentralized Meme Tokens that grew into a vibrant ecosystem NEC. Fun
           tokens. Artist incubator.Growing 440k+ Community& more on the horizon!
         </p>
-        <a
-          href=""
-          class="btns"
-        >read our woofpaper</a>
+        <a href="" class="btns">read our woofpaper</a>
       </div>
     </div>
     <div class="box1 btn-group">
       <div class="png">
-        <img
-          :src="require('./../assets/images/pic_BNB.png')"
-          alt=""
-        />
+        <img :src="require('./../assets/images/pic_BNB.png')" alt="" />
       </div>
       <div class="btn">
-        <a
-          href=""
-          class="btns"
-        >
-          <img
-            :src="require('./../assets/images/icon_receive.png')"
-            alt=""
-          />
+        <a href="" class="btns">
+          <img :src="require('./../assets/images/icon_receive.png')" alt="" />
           Receive BNB
         </a>
       </div>
@@ -94,10 +79,7 @@
       <p class="tit">ECOSYSTEM</p>
       <div class="btn-group conbox">
         <div class="pngnbox">
-          <img
-            :src="require('./../assets/images/pic_eco.png')"
-            alt=""
-          />
+          <img :src="require('./../assets/images/pic_eco.png')" alt="" />
         </div>
         <div class="contxt btn">
           <p class="desc">
@@ -177,26 +159,17 @@
             BONE is not available yet , but will be able to acquire soon. <br />
             See the Live Chart analytics: NEC
           </p>
-          <a
-            href=""
-            class="btns"
-          >BUY NEC</a>
+          <a href="" class="btns">BUY NEC</a>
         </div>
         <div class="pngnbox">
-          <img
-            :src="require('./../assets/images/pic_how to buy.png')"
-            alt=""
-          />
+          <img :src="require('./../assets/images/pic_how to buy.png')" alt="" />
         </div>
       </div>
     </div>
     <div class="box4">
       <div class="conbox btn-group">
         <div class="pngnbox">
-          <img
-            :src="require('./../assets/images/pic_solution.png')"
-            alt=""
-          />
+          <img :src="require('./../assets/images/pic_solution.png')" alt="" />
         </div>
         <div class="contxt btn">
           <p class="tit">Solution</p>
@@ -232,10 +205,7 @@
             do they need to find complicated agents to communicate. The entire
             transaction can be carried out online.
           </p>
-          <a
-            href=""
-            class="btns"
-          >BUY NEC</a>
+          <a href="" class="btns">BUY NEC</a>
         </div>
       </div>
     </div>
@@ -244,10 +214,7 @@
       <div class="conline fn-clear">
         <div class="fl">
           <p class="tag">01</p>
-          <img
-            :src="require('./../assets/images/circle_roadmap.png')"
-            alt=""
-          />
+          <img :src="require('./../assets/images/circle_roadmap.png')" alt="" />
           <p class="tit">Initiate crowdfunding</p>
           <p class="desc">
             In the first quarter of 2021, the project launched crowdfunding and
@@ -256,10 +223,7 @@
         </div>
         <div class="fl">
           <p class="tag">02</p>
-          <img
-            :src="require('./../assets/images/circle_roadmap.png')"
-            alt=""
-          />
+          <img :src="require('./../assets/images/circle_roadmap.png')" alt="" />
           <p class="tit">Token online</p>
           <p class="desc">
             Project official website construction, technology deployment, Token
@@ -268,19 +232,13 @@
         </div>
         <div class="fl">
           <p class="tag">03</p>
-          <img
-            :src="require('./../assets/images/circle_roadmap.png')"
-            alt=""
-          />
+          <img :src="require('./../assets/images/circle_roadmap.png')" alt="" />
           <p class="tit">Pledge mining</p>
           <p class="desc">In the third quarter, swap SWAP, LP, pledge mining</p>
         </div>
         <div class="fl">
           <p class="tag">04</p>
-          <img
-            :src="require('./../assets/images/circle_roadmap.png')"
-            alt=""
-          />
+          <img :src="require('./../assets/images/circle_roadmap.png')" alt="" />
           <p class="tit">Promote real estate NFT</p>
           <p class="desc">
             NFT trading mainnet is online, and celebrities promote real estate
@@ -289,10 +247,7 @@
         </div>
         <div class="fl">
           <p class="tag">05</p>
-          <img
-            :src="require('./../assets/images/circle_roadmap.png')"
-            alt=""
-          />
+          <img :src="require('./../assets/images/circle_roadmap.png')" alt="" />
           <p class="tit">Online transaction</p>
           <p class="desc">Real estate NFT project online transaction</p>
         </div>
@@ -306,10 +261,7 @@
       </p>
       <div class="btn-group">
         <div class="btn">
-          <img
-            :src="require('./../assets/images/BEST POSSIBLE .png')"
-            alt=""
-          />
+          <img :src="require('./../assets/images/BEST POSSIBLE .png')" alt="" />
           <p class="tit">
             BEST POSSIBLE<br />
             CROSS-MARKET PRICE
@@ -321,10 +273,7 @@
           </p>
         </div>
         <div class="btn">
-          <img
-            :src="require('./../assets/images/POSSIBILITY .png')"
-            alt=""
-          />
+          <img :src="require('./../assets/images/POSSIBILITY .png')" alt="" />
           <p class="tit">
             POSSIBILITY<br />
             OF TRUST MANAGEMENT
@@ -336,10 +285,7 @@
           </p>
         </div>
         <div class="btn">
-          <img
-            :src="require('./../assets/images/BULIT -IN.png')"
-            alt=""
-          />
+          <img :src="require('./../assets/images/BULIT -IN.png')" alt="" />
           <p class="tit">
             BULIT -IN<br />
             ROBOT MARKET
@@ -353,10 +299,7 @@
       </div>
       <div class="btn-group">
         <div class="btn">
-          <img
-            :src="require('./../assets/images/ONE EXCHANGE.png')"
-            alt=""
-          />
+          <img :src="require('./../assets/images/ONE EXCHANGE.png')" alt="" />
           <p class="tit">
             BULIT -IN<br />
             ROBOT MARKET
@@ -368,10 +311,7 @@
           </p>
         </div>
         <div class="btn">
-          <img
-            :src="require('./../assets/images/FULL.png')"
-            alt=""
-          />
+          <img :src="require('./../assets/images/FULL.png')" alt="" />
           <p class="tit">
             FULL-FILEDGED<br />
             MOBLE TRADING
@@ -383,10 +323,7 @@
           </p>
         </div>
         <div class="btn">
-          <img
-            :src="require('./../assets/images/COPY.png')"
-            alt=""
-          />
+          <img :src="require('./../assets/images/COPY.png')" alt="" />
           <p class="tit">
             COPY TRADING<br />
             AND SINGALS
@@ -402,10 +339,7 @@
     <div class="box7">
       <div class="conbox btn-group">
         <div class="pngnbox">
-          <img
-            :src="require('./../assets/images/card.png')"
-            alt=""
-          />
+          <img :src="require('./../assets/images/card.png')" alt="" />
         </div>
         <div class="contxt btn">
           <p class="tit tr">RESCUE</p>
@@ -443,30 +377,15 @@
         <div class="line">
           <a class="btns fl">Click here to search for your prefered country!</a>
           <div class="fr tag">
-            <a
-              href=""
-              class="fl"
-            >
-              <img
-                :src="require('./../assets/images/3.png')"
-                alt=""
-              /></a>
-            <a
-              href=""
-              class="fl"
-            >
-              <img
-                :src="require('./../assets/images/1.png')"
-                alt=""
-              /></a>
-            <a
-              href=""
-              class="fl"
-            >
-              <img
-                :src="require('./../assets/images/2.png')"
-                alt=""
-              /></a>
+            <a href="" class="fl">
+              <img :src="require('./../assets/images/3.png')" alt=""
+            /></a>
+            <a href="" class="fl">
+              <img :src="require('./../assets/images/1.png')" alt=""
+            /></a>
+            <a href="" class="fl">
+              <img :src="require('./../assets/images/2.png')" alt=""
+            /></a>
           </div>
         </div>
       </div>
@@ -478,6 +397,24 @@
 <script>
 // import "./css/index.css";
 import "./css/index.less";
-export default {};
+export default {
+  props: [],
+  data() {
+    return {
+      routePath: "",
+    };
+  },
+  computed: {
+    interceptAccount() {
+      const account =  this.$store.state.defaultAccount;
+      return typeof account === "string"
+        ? `${account.substring(0, 4)}...${account.substr(
+            account.length - 4,
+            account.length
+          )}`
+        : "";
+    },
+  },
+};
 </script>
 <style></style>
