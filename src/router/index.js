@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from './../views/Home.vue'
-
+// import Whitepaper from './../views/whitepaper.vue'
 Vue.use(VueRouter)
 
 const routes = [{
@@ -15,6 +15,11 @@ const routes = [{
   name: 'Home',
   component: Home
 }
+// {
+//   path: '/whitepaper',
+//   name: 'whitepaper',
+//   component: Whitepaper
+// }
 ]
 
 const router = new VueRouter({

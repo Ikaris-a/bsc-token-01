@@ -8,13 +8,19 @@
           :src="require('./../assets/images/logo.png')"
           alt=""
         />
-        <a href="" class="fr btns">{{ interceptAccount?interceptAccount:"Connect Wallet" }}</a>
+        <a href="" class="fr btns">{{
+          interceptAccount ? interceptAccount : "Connect Wallet"
+        }}</a>
         <ul class="fr">
-          <li class="fl"><a href="">Ecosystem</a></li>
-          <li class="fl"><a href="">Buy</a></li>
-          <li class="fl"><a href="">NECSWAP</a></li>
-          <li class="fl"><a href="">Art</a></li>
-          <li class="fl"><a href="">Rescue</a></li>
+          <!-- <li class="fl"><a href="">Ecosystem</a></li> -->
+          <li class="fl">
+            <a href="https://exchange.pancakeswap.finance/#/swap?inputCurrency="
+              >Buy</a
+            >
+          </li>
+          <!-- <li class="fl"><a href="">NECSWAP</a></li> -->
+          <!-- <li class="fl"><a href="">Art</a></li> -->
+          <!-- <li class="fl"><a href="">Rescue</a></li> -->
           <li class="fl"><a href="">Community</a></li>
         </ul>
       </div>
@@ -26,15 +32,12 @@
         alt=""
       />
       <div class="contxt">
-        <p class="tit">Nuclear Energy Chain</p>
+        <p class="tit">Network Estate Chain</p>
         <p class="desc">
           Decentralized Meme Tokens that grew into a vibrant ecosystem NEC. Fun
           tokens. Artist incubator.Growing 440k+ Community& more on the horizon!
         </p>
-        <a
-          href=""
-          class="btns hover h5_btns"
-        >read our woofpaper</a>
+        <a href="http://www.nectoken.finance/NetworkEstateChain-White-Paper.pdf" class="btns hover h5_btns">White Paper</a>
       </div>
     </div>
     <div class="box1 btn-group">
@@ -42,46 +45,40 @@
         <img :src="require('./../assets/images/pic_BNB.png')" alt="" />
       </div>
       <div class="btn">
-        <a
-          href=""
-          class="btns hover h5_btns"
-        >
-          <img
-            :src="require('./../assets/images/icon_receive.png')"
-            alt=""
-          />
+        <a href="" class="btns hover h5_btns">
+          <img :src="require('./../assets/images/icon_receive.png')" alt="" />
           Receive BNB
         </a>
       </div>
     </div>
     <div class="box2">
       <ul class="tit">
-        <li>To/From</li>
-        <li>Amount</li>
+        <li>My superior</li>
+        <li>Reward</li>
       </ul>
       <ul class="line">
-        <li>screenshots4869887attachments093625ullwallet</li>
-        <li>165.61USD</li>
+        <li>0x1BE31032C039be3D1e4130bbAf81dD78fd5016b1</li>
+        <li>165.61BNB</li>
       </ul>
       <ul class="line">
-        <li>screenshots4869887attachments093625ullwallet</li>
-        <li>165.61USD</li>
+        <li>0x1BE31032C039be3D1e4130bbAf81dD78fd5016b1</li>
+        <li>165.61BNB</li>
       </ul>
       <ul class="line">
-        <li>screenshots4869887attachments093625ullwallet</li>
-        <li>165.61USD</li>
+        <li>0x1BE31032C039be3D1e4130bbAf81dD78fd5016b1</li>
+        <li>165.61BNB</li>
       </ul>
       <ul class="line">
-        <li>screenshots4869887attachments093625ullwallet</li>
-        <li>165.61USD</li>
+        <li>0x1BE31032C039be3D1e4130bbAf81dD78fd5016b1</li>
+        <li>165.61BNB</li>
       </ul>
       <ul class="line">
-        <li>screenshots4869887attachments093625ullwallet</li>
-        <li>165.61USD</li>
+        <li>0x1BE31032C039be3D1e4130bbAf81dD78fd5016b1</li>
+        <li>165.61BNB</li>
       </ul>
       <ul class="line">
-        <li>screenshots4869887attachments093625ullwallet</li>
-        <li>165.61USD</li>
+        <li>0x1BE31032C039be3D1e4130bbAf81dD78fd5016b1</li>
+        <li>165.61BNB</li>
       </ul>
     </div>
     <div class="box3">
@@ -94,18 +91,17 @@
           <p class="desc">
             NEC is an experiment in decentralized spontaneous community
             building. NEC token is our first token and allows users to hold
-            Billions or even Trillions of them. Nicknamed the NECCOIN KILLER,
-            this ERC-20 ONLY token can remain well under a penny and still
-            outpace NECcoin in a small amount of time (relatively speaking).
-            Popular worldwide, and already up thousands of percent, NEC token
-            ($NEC) is the first cryptocurrency token to be listed and
-            incentivized on NECSwap, our decentralized exchange. 
+            Billions or even Trillions of them. Nicknamed the NEC KILLER, this
+            ERC-20 ONLY token can remain well under a penny and still outpace
+            NECcoin in a small amount of time (relatively speaking). Popular
+            worldwide, and already up thousands of percent, NEC token ($NEC) is
+            the first cryptocurrency token to be listed and incentivized on
+            NECSwap, our decentralized exchange.
           </p>
-          <p class="desc">We locked  the 50% of the total supply to Uniswap and threw away the keys! The
-            remaining 50% was burned to Vitalik Buterin and we were the first
-            project following this path, so everyone has to buy on the open
-            market, ensuring a fair and complete distribution where devs don't
-            own team tokens they can dump on the community.
+          <p class="desc">
+            W we were the first project following this path, so everyone has to
+            buy on the open market, ensuring a fair and complete distribution
+            where devs don't own team tokens they can dump on the community.
           </p>
           <div class="btn-group">
             <div class="btn">
@@ -115,7 +111,7 @@
                 "
                 alt=""
               />
-              <p>Liquidity Locked to Uniswap</p>
+              <p>Liquidity Locked to Pancakeswap</p>
             </div>
             <div class="btn">
               <img
@@ -139,20 +135,32 @@
           <p class="txt">
             It was originally set to be a rebase token pegged to the price of
             Dogecoin. Now, it has been unleashed and will not rebase. With a
-            total circulation of ONLY 100k tokens, it has the opposite appeal to
-            Shib (which has a much larger supply). The second token incentivized
-            on the swap offers special rewards for those who provide liquidity.
+            total circulation of ONLY 100,000,000,000 tokens, it has the
+            opposite appeal to Shib (which has a much larger supply). The second
+            token incentivized on the swap offers special rewards for those who
+            provide liquidity.
           </p>
           <p class="tag">——LEASH</p>
         </div>
         <div class="btn">
           <p class="txt">
-            BONE Dogecoin Killer is our next token! COMING SOON, Shiba Inu Bone,
-            takes the power of Defi to the next level. Details on how to acquire
-            this token, tokenomics and incentives will be announced with the
-            reveal of ShibaSwap.
+            NEC It is a value circulation network token developed based on the
+            blockchain ERC20, which defines an indivisible, ecological A unique
+            interface specification for token interaction and circulation. On
+            the blockchain, digital cryptocurrency is divided into two
+            categories: native currency and token. The former such as Bitcoin,
+            Qtum Etc., has its own main chain and uses transactions on the chain
+            to maintain ledger data; the latter such as BOT, INK Etc., attached
+            to the existing district Blockchain uses smart contracts to record
+            the ledger. Tokens can be divided into two types: homogenization and
+            non-homogeneity. Homogeneous tokens, namely FT (Fungible Token),
+            with ERC20 and QRC20 It is the basic standard, which can be
+            substituted for each other and can be divided into infinitely.
+            token. Non-homogeneous tokens, namely NFTs, are unique and
+            indivisible tokens, such as encrypted cats, tokenized digital
+            tickets, etc.
           </p>
-          <p class="tag">——BONE Dogecoin Killer</p>
+          <p class="tag">——NEC Dogecoin Killer</p>
         </div>
       </div>
     </div>
@@ -161,20 +169,23 @@
         <div class="contxt btn">
           <p class="tit">HO​W TO BUY</p>
           <p class="desc">
-            The only place to buy or sell NEC safely is on Uniswap. There are
-            some centralized exchanges that have listed NEC, but CEXs have a
-            history of locking funds.<br />
-            If you can, it is safer to trade on a decentralized exchange like
-            Uniswap or 1inch. 
+            We have opened trading at PancakeSwap.<br />
+            If you can't trade NEC, please make sure that Expert Mode is turned
+            on first. OR Slippage tolerance >=10% In order to ensure the stable
+            operation of the project, we have added a deflation mechanism to
+            effectively filter robot transactions
           </p>
-          <p class="p2 desc">BONE is not available yet , but will be able to acquire soon.</p>
+          <p class="p2 desc">
+            <!-- BONE is not available yet , but will be able to acquire soon. -->
+          </p>
           <p class="p3 desc">
             See the Live Chart analytics: NEC
           </p>
           <a
-            href=""
+            href="https://exchange.pancakeswap.finance/#/swap?inputCurrency="
             class="btns hover h5_btns"
-          >BUY NEC</a>
+            >BUY NEC</a
+          >
         </div>
         <div class="pngnbox">
           <img :src="require('./../assets/images/pic_how to buy.png')" alt="" />
@@ -270,7 +281,7 @@
     <div class="box6">
       <p class="tit">NECSWAP</p>
       <p class="desc">
-        ShibaSwap is undergoing security tests, audits and <br />
+        NECSwap is undergoing security tests, audits and <br />
         final updates to prepare for a safe launch!
       </p>
       <div class="btn-group">
@@ -281,9 +292,9 @@
             CROSS-MARKET PRICE
           </p>
           <p class="desc">
-            The only place to buy or sell NEC safely is on Uniswap. There are
-            some centralized exchanges that have listed NEC, but CEXs have a
-            history of locking funds.
+            The place to buy or sell NEC is on Pancakeswap. There are some
+            centralized exchanges that have listed NEC, but CEXs have a history
+            of locking funds.
           </p>
         </div>
         <div class="btn">
@@ -293,8 +304,8 @@
             OF TRUST MANAGEMENT
           </p>
           <p class="desc">
-            The only place to buy or sell NEC safely is on Uniswap. There are
-            some centralized exchanges that have listed NEC, but CEXs have a
+            The only place to buy or sell NEC safely is on Pancakeswap. There
+            are some centralized exchanges that have listed NEC, but CEXs have a
             history of locking funds.
           </p>
         </div>
@@ -305,8 +316,8 @@
             ROBOT MARKET
           </p>
           <p class="desc">
-            The only place to buy or sell NEC safely is on Uniswap. There are
-            some centralized exchanges that have listed NEC, but CEXs have a
+            The only place to buy or sell NEC safely is on Pancakeswap. There
+            are some centralized exchanges that have listed NEC, but CEXs have a
             history of locking funds.
           </p>
         </div>
@@ -319,8 +330,8 @@
             ROBOT MARKET
           </p>
           <p class="desc">
-            The only place to buy or sell NEC safely is on Uniswap. There are
-            some centralized exchanges that have listed NEC, but CEXs have a
+            The only place to buy or sell NEC safely is on Pancakeswap. There
+            are some centralized exchanges that have listed NEC, but CEXs have a
             history of locking funds.
           </p>
         </div>
@@ -331,8 +342,8 @@
             MOBLE TRADING
           </p>
           <p class="desc">
-            The only place to buy or sell NEC safely is on Uniswap. There are
-            some centralized exchanges that have listed NEC, but CEXs have a
+            The only place to buy or sell NEC safely is on Pancakeswap. There
+            are some centralized exchanges that have listed NEC, but CEXs have a
             history of locking funds.
           </p>
         </div>
@@ -343,8 +354,8 @@
             AND SINGALS
           </p>
           <p class="desc">
-            The only place to buy or sell NEC safely is on Uniswap. There are
-            some centralized exchanges that have listed NEC, but CEXs have a
+            The only place to buy or sell NEC safely is on Pancakeswap. There
+            are some centralized exchanges that have listed NEC, but CEXs have a
             history of locking funds.
           </p>
         </div>
@@ -379,7 +390,7 @@
         <p>
           If you'd like to donate to the Devs, send ETH, SHIB or LEASH here.
           Thank you for your support!
-          0xc351155C80aCD043BD5F8FE7ffc8536af1fF9375<br /><br />
+          0x1BE31032C039be3D1e4130bbAf81dD78fd5016b1<br /><br />
 
           Our community keeps growing everyday. Please join our social platforms
           to get updates using the links below. There are 150k+ people in our
@@ -389,14 +400,16 @@
           international groups for foreign language speakers.
         </p>
         <div class="line">
-          <a class="btns fl hover">Click here to search for your prefered country!</a>
+          <a class="btns fl hover"
+            >Click here to search for your prefered country!</a
+          >
           <div class="fr tag">
-            <a href="" class="fl">
+            <a href="https://twitter.com/nec_estatd/" class="fl">
               <img :src="require('./../assets/images/3.png')" alt=""
             /></a>
-            <a href="" class="fl">
+            <!-- <a href="" class="fl">
               <img :src="require('./../assets/images/1.png')" alt=""
-            /></a>
+            /></a> -->
             <a href="" class="fl">
               <img :src="require('./../assets/images/2.png')" alt=""
             /></a>
@@ -404,7 +417,7 @@
         </div>
       </div>
     </div>
-    <footer>Copyright ©Nuclear Energy Chain</footer>
+    <footer>Copyright ©Network Estate Chain</footer>
   </div>
 </template>
 
@@ -420,7 +433,7 @@ export default {
   },
   computed: {
     interceptAccount() {
-      const account =  this.$store.state.defaultAccount;
+      const account = this.$store.state.defaultAccount;
       return typeof account === "string"
         ? `${account.substring(0, 4)}...${account.substr(
             account.length - 4,
