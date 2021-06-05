@@ -11,7 +11,7 @@ import Web3 from "web3";
 import necABI from "./config/abi.json";
 export default {
   name: "App",
-  data () {
+  data() {
     return {
       NETWORK_ID: "https://data-seed-prebsc-1-s1.binance.org:8545/",
       defaultAccount: "",
@@ -20,12 +20,12 @@ export default {
       addressList: [],
     };
   },
-  async mounted () {
+  async mounted() {
     await this.mountedFunc();
     await this.upList();
   },
   methods: {
-    async upList () {
+    async upList() {
       await this.initContract();
       const address = await this.necContract.methods
         .getUpList(this.defaultAccount)
@@ -33,7 +33,7 @@ export default {
       this.addressList = address;
       console.log(address, "=======");
     },
-    async bindUpAddress () {
+    async bindUpAddress() {
       await this.initContract();
       console.log(this.necContract);
       const input = await this.necContract.methods
@@ -45,7 +45,7 @@ export default {
         }
       );
     },
-    _promise (from, to, input) {
+    _promise(from, to, input) {
       let web3 = window.web3;
       return new Promise((resolve, reject) => {
         try {
@@ -56,7 +56,7 @@ export default {
               value: 0,
               input: input,
             },
-            function (error, res) {
+            function(error, res) {
               if (!error) {
                 const tval = setInterval(async () => {
                   const tx = await web3.eth.getTransactionReceipt(res);
@@ -76,24 +76,25 @@ export default {
         }
       });
     },
-    async initContract () {
+    async initContract() {
       const web3 = new Web3(new Web3.providers.HttpProvider(this.NETWORK_ID));
       this.necContract = new web3.eth.Contract(necABI, this.contractAddress);
     },
-    handleChainChanged () {
+    handleChainChanged() {
       setTimeout(() => {
         window.location.reload();
       }, 100);
     },
-    handleAccountsChanged (accounts) {
+    handleAccountsChanged(accounts) {
       if (accounts.length === 0) {
         // MetaMask is locked or the user has not connected any accounts
       } else if (accounts[0] !== this.defaultAccount) {
         this.defaultAccount = accounts[0];
+        this.$store.commit("defaultAccountFun", accounts[0]);
         window.location.reload();
       }
     },
-    async mountedFunc () {
+    async mountedFunc() {
       // await this.initWeb3();
       console.log(ethereum);
       let ethereum = window.ethereum;
@@ -105,10 +106,12 @@ export default {
             method: "eth_requestAccounts",
           });
           // 判断是否已经连接钱包
-          console.log(window.web3, "00000");
+          console.log(accounts, "=====");
+          this.$store.commit("defaultAccountFun", accounts[0]);
+          this.defaultAccount = accounts[0];
           if (Array.isArray(accounts) && accounts.length > 0) {
-            this.defaultAccount = accounts[0];
             web3.eth.defaultAccount = accounts[0];
+            console.log(this.$store.state.defaultAccount, "-------");
             localStorage.removeItem("walletconnect");
           }
           this.initContract();
@@ -120,11 +123,10 @@ export default {
         }
       }
     },
-    async initWeb3 () {
+    async initWeb3() {
       if (!Web3.givenProvider) {
         return;
       }
-
       let web3 = window.web3;
       if (typeof web3 !== "undefined") {
         web3 = new Web3(web3.currentProvider);
