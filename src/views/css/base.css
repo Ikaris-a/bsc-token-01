@@ -235,6 +235,9 @@ a[href]:not([class]) {
 .scroll {
     -webkit-overflow-scrolling: touch
 }
+a{
+    cursor: pointer;
+}
 .hover{
     opacity: 0.8;
 }
