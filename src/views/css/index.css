@@ -73,7 +73,6 @@ body {
   font-family: Roboto-Black, Roboto;
   font-weight: 900;
   color: #47259B;
-  line-height: 80px;
   text-align: left;
 }
 .topbanner .contxt .desc {
@@ -102,14 +101,17 @@ body {
   max-width: 1200px;
   width: 100%;
   vertical-align: middle;
-  padding-top: 30px;
   align-items: center;
   margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .box1 .png {
   display: inline-block;
   vertical-align: middle;
-  width: 50%;
+  width: 40%;
+  margin-right: 10%;
 }
 .box1 .png img {
   display: block;

@@ -1,4 +1,4 @@
-<!--  -->
+<!-- eslint-disable  -->
 <template>
   <div>
     <div id="header">
@@ -476,7 +476,7 @@
 </template>
 
 <script>
-import "./css/index.css";
+// import "./css/index.css";
 import "./css/index.less";
 export default {};
 </script>
