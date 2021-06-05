@@ -1,6 +1,6 @@
 <!-- eslint-disable  -->
 <template>
-  <div>
+  <div class="home_content">
     <div id="header">
       <div class="content fn-clear">
         <img
@@ -31,7 +31,10 @@
           Decentralized Meme Tokens that grew into a vibrant ecosystem NEC. Fun
           tokens. Artist incubator.Growing 440k+ Community& more on the horizon!
         </p>
-        <a href="" class="btns">read our woofpaper</a>
+        <a
+          href=""
+          class="btns hover h5_btns"
+        >read our woofpaper</a>
       </div>
     </div>
     <div class="box1 btn-group">
@@ -39,8 +42,14 @@
         <img :src="require('./../assets/images/pic_BNB.png')" alt="" />
       </div>
       <div class="btn">
-        <a href="" class="btns">
-          <img :src="require('./../assets/images/icon_receive.png')" alt="" />
+        <a
+          href=""
+          class="btns hover h5_btns"
+        >
+          <img
+            :src="require('./../assets/images/icon_receive.png')"
+            alt=""
+          />
           Receive BNB
         </a>
       </div>
@@ -76,12 +85,12 @@
       </ul>
     </div>
     <div class="box3">
-      <p class="tit">ECOSYSTEM</p>
       <div class="btn-group conbox">
         <div class="pngnbox">
           <img :src="require('./../assets/images/pic_eco.png')" alt="" />
         </div>
         <div class="contxt btn">
+          <p class="tit">ECOSYSTEM</p>
           <p class="desc">
             NEC is an experiment in decentralized spontaneous community
             building. NEC token is our first token and allows users to hold
@@ -90,8 +99,9 @@
             outpace NECcoin in a small amount of time (relatively speaking).
             Popular worldwide, and already up thousands of percent, NEC token
             ($NEC) is the first cryptocurrency token to be listed and
-            incentivized on NECSwap, our decentralized exchange. <br />We locked
-            the 50% of the total supply to Uniswap and threw away the keys! The
+            incentivized on NECSwap, our decentralized exchange. 
+          </p>
+          <p class="desc">We locked  the 50% of the total supply to Uniswap and threw away the keys! The
             remaining 50% was burned to Vitalik Buterin and we were the first
             project following this path, so everyone has to buy on the open
             market, ensuring a fair and complete distribution where devs don't
@@ -146,7 +156,7 @@
         </div>
       </div>
     </div>
-    <div class="box4">
+    <div class="box4 box_f">
       <div class="conbox btn-group">
         <div class="contxt btn">
           <p class="tit">HO​W TO BUY</p>
@@ -155,18 +165,23 @@
             some centralized exchanges that have listed NEC, but CEXs have a
             history of locking funds.<br />
             If you can, it is safer to trade on a decentralized exchange like
-            Uniswap or 1inch. <br />
-            BONE is not available yet , but will be able to acquire soon. <br />
+            Uniswap or 1inch. 
+          </p>
+          <p class="p2 desc">BONE is not available yet , but will be able to acquire soon.</p>
+          <p class="p3 desc">
             See the Live Chart analytics: NEC
           </p>
-          <a href="" class="btns">BUY NEC</a>
+          <a
+            href=""
+            class="btns hover h5_btns"
+          >BUY NEC</a>
         </div>
         <div class="pngnbox">
           <img :src="require('./../assets/images/pic_how to buy.png')" alt="" />
         </div>
       </div>
     </div>
-    <div class="box4">
+    <div class="box4 box_l">
       <div class="conbox btn-group">
         <div class="pngnbox">
           <img :src="require('./../assets/images/pic_solution.png')" alt="" />
@@ -205,7 +220,6 @@
             do they need to find complicated agents to communicate. The entire
             transaction can be carried out online.
           </p>
-          <a href="" class="btns">BUY NEC</a>
         </div>
       </div>
     </div>
@@ -254,7 +268,7 @@
       </div>
     </div>
     <div class="box6">
-      <p class="tit">The Roadmap</p>
+      <p class="tit">NECSWAP</p>
       <p class="desc">
         ShibaSwap is undergoing security tests, audits and <br />
         final updates to prepare for a safe launch!
@@ -360,7 +374,7 @@
       </div>
     </div>
     <div class="box8">
-      <p class="tit tl">RESCUE</p>
+      <p class="tit tl">COMMUNITY</p>
       <div class="contxt">
         <p>
           If you'd like to donate to the Devs, send ETH, SHIB or LEASH here.
@@ -375,7 +389,7 @@
           international groups for foreign language speakers.
         </p>
         <div class="line">
-          <a class="btns fl">Click here to search for your prefered country!</a>
+          <a class="btns fl hover">Click here to search for your prefered country!</a>
           <div class="fr tag">
             <a href="" class="fl">
               <img :src="require('./../assets/images/3.png')" alt=""
