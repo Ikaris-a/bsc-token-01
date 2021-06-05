@@ -10,7 +10,7 @@
         />
         <a
           href=""
-          class="fr btns"
+          class="fr btns hover"
         >Wallet</a>
         <ul class="fr">
           <li class="fl"><a href="">Ecosystem</a></li>

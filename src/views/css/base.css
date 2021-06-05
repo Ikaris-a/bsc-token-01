@@ -229,9 +229,12 @@ a[href]:not([class]) {
 }
 
 .btn-group .btn {
-    flex-grow: 1
+    /* flex-grow: 1 */
 }
 
 .scroll {
     -webkit-overflow-scrolling: touch
+}
+.hover{
+    opacity: 0.8;
 }
