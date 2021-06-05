@@ -1,28 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
-
-    <span @click="bindUpAddress">绑定</span>
-    <span>上级列表</span>
-    <template>
-      <ul>
-        <li v-for="item in addressList"  :key="item">{{ item }}</li>
-      </ul>
-    </template>
+    <router-view />
   </div>
 </template>
 
 <script>
-// import HelloWorld from "./components/HelloWorld.vue";
+import "./views/css/base.css";
+
 import Web3 from "web3";
 import necABI from "./config/abi.json";
 export default {
   name: "App",
-  components: {
-    // HelloWorld,
-  },
-  data() {
+  data () {
     return {
       NETWORK_ID: "https://data-seed-prebsc-1-s1.binance.org:8545/",
       defaultAccount: "",
@@ -31,12 +20,12 @@ export default {
       addressList: [],
     };
   },
-  async mounted() {
+  async mounted () {
     await this.mountedFunc();
     await this.upList();
   },
   methods: {
-    async upList() {
+    async upList () {
       await this.initContract();
       const address = await this.necContract.methods
         .getUpList(this.defaultAccount)
@@ -44,7 +33,7 @@ export default {
       this.addressList = address;
       console.log(address, "=======");
     },
-    async bindUpAddress() {
+    async bindUpAddress () {
       await this.initContract();
       console.log(this.necContract);
       const input = await this.necContract.methods
@@ -56,7 +45,7 @@ export default {
         }
       );
     },
-    _promise(from, to, input) {
+    _promise (from, to, input) {
       let web3 = window.web3;
       return new Promise((resolve, reject) => {
         try {
@@ -87,16 +76,16 @@ export default {
         }
       });
     },
-    async initContract() {
+    async initContract () {
       const web3 = new Web3(new Web3.providers.HttpProvider(this.NETWORK_ID));
       this.necContract = new web3.eth.Contract(necABI, this.contractAddress);
     },
-    handleChainChanged() {
+    handleChainChanged () {
       setTimeout(() => {
         window.location.reload();
       }, 100);
     },
-    handleAccountsChanged(accounts) {
+    handleAccountsChanged (accounts) {
       if (accounts.length === 0) {
         // MetaMask is locked or the user has not connected any accounts
       } else if (accounts[0] !== this.defaultAccount) {
@@ -104,7 +93,7 @@ export default {
         window.location.reload();
       }
     },
-    async mountedFunc() {
+    async mountedFunc () {
       // await this.initWeb3();
       console.log(ethereum);
       let ethereum = window.ethereum;
@@ -131,7 +120,7 @@ export default {
         }
       }
     },
-    async initWeb3() {
+    async initWeb3 () {
       if (!Web3.givenProvider) {
         return;
       }
@@ -151,13 +140,25 @@ export default {
 };
 </script>
 
-<style>
+<style lang="less">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+#nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
 }
 </style>
