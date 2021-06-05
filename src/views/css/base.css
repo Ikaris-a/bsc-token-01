@@ -237,7 +237,10 @@ a[href]:not([class]) {
 }
 a{
     cursor: pointer;
+    text-transform: uppercase;
 }
-.hover{
+.hover:hover{
     opacity: 0.8;
 }
+
+  
