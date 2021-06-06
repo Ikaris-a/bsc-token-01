@@ -422,7 +422,6 @@
 </template>
 
 <script>
-// import "./css/index.css";
 import "./css/index.less";
 export default {
   props: [],
