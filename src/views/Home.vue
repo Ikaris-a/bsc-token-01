@@ -9,7 +9,7 @@
           alt=""
         />
         <a href="" class="fr btns">{{
-          interceptAccount ? interceptAccount : "Connect Wallet"
+          interceptAccount !== "..." ? interceptAccount : "Wallet"
         }}</a>
         <ul class="fr">
           <!-- <li class="fl"><a href="">Ecosystem</a></li> -->
@@ -37,7 +37,16 @@
           Decentralized Meme Tokens that grew into a vibrant ecosystem NEC. Fun
           tokens. Artist incubator.Growing 440k+ Community& more on the horizon!
         </p>
-        <a href="http://www.nectoken.finance/NetworkEstateChain-White-Paper.pdf" class="btns hover h5_btns">White Paper</a>
+        <a
+          href="http://www.nectoken.finance/NetworkEstateChain-White-Paper.pdf"
+          class="btns hover h5_btns"
+          >White Paper</a
+        >
+        <div class="btn bind-inviter">
+          <a href="" class="btns hover h5_btns">
+            Bind  Inviter
+          </a> 
+        </div>
       </div>
     </div>
     <div class="box1 btn-group">
@@ -281,7 +290,8 @@
     <div class="box6">
       <p class="tit">NECSWAP</p>
       <p class="desc">
-        NECSwap is undergoing security tests, audits and final updates to prepare for a safe launch!
+        NECSwap is undergoing security tests, audits and final updates to
+        prepare for a safe launch!
       </p>
       <div class="btn-group">
         <div class="btn">
