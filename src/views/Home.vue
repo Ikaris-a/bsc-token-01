@@ -281,8 +281,7 @@
     <div class="box6">
       <p class="tit">NECSWAP</p>
       <p class="desc">
-        NECSwap is undergoing security tests, audits and <br />
-        final updates to prepare for a safe launch!
+        NECSwap is undergoing security tests, audits and final updates to prepare for a safe launch!
       </p>
       <div class="btn-group">
         <div class="btn">

@@ -489,7 +489,9 @@ body {
     font-weight: 500;
     color: #ffffff;
     line-height: 24px;
-    margin-bottom: 62px;
+    margin: 0 auto 62px;
+    width: 90%;
+    max-width: 500px;
   }
 
   .btn-group {
@@ -951,17 +953,28 @@ footer {
   }
 
   .box6 {
+    .tit {
+      padding-bottom: 20px;
+    }
+    .desc {
+      margin: 0 auto 22px;
+    }
     .btn-group {
       flex-wrap: wrap;
-      .btn:not(:last-child) {
-        margin-right: 0;
+      .btn {
+        padding: 15px;
+        margin-right: 20px !important;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        &:not(:first-child) {
+          margin-right: 20px;
+        }
       }
     }
   }
-
   .box7 {
     padding-bottom: 0;
-
+    margin: 0px auto;
     .btn-group {
       flex-wrap: wrap;
     }
@@ -971,29 +984,39 @@ footer {
       .contxt {
         width: 100%;
         padding: 10px 30px;
+        .tit {
+          text-align: center;
+        }
+      }
+      .desc {
+        font-size: 16px;
       }
     }
   }
 
   .box8 {
+    margin: 0px auto;
     .tit {
       text-align: center;
+      padding: 20px 0;
+      font-size: 24px;
     }
 
     .contxt {
       padding-right: 0;
-      padding: 0 30px;
+      padding: 0 20px ;
+      word-wrap: break-word;
     }
 
     p {
-      padding: 20px 0;
+      padding: 0 0 20px;
     }
 
     .line {
       .btns {
         display: block;
         margin: auto;
-        width: 90%;
+        width: 100%;
         font-size: 12px;
         height: 50px;
         line-height: 50px;
@@ -1067,7 +1090,7 @@ footer {
     display: inline-block;
     margin-left: 30px;
   }
-  img{
+  img {
     position: relative;
     top: 12px;
   }
@@ -1080,6 +1103,6 @@ footer {
     font-size: 26px;
   }
 }
-html{
+html {
   background-color: #0a072e;
 }
